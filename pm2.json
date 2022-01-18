@@ -1,0 +1,15 @@
+{
+  "apps": [
+    {
+      "name": "mch-dc",
+      "script": ".\\node_modules\\ts-node\\dist\\bin.js",
+      "args": "-- build\\index.js",
+      "watch": false,
+      "instances": "1",
+      "exec_mode": "fork",
+      "env": {
+        "production": true
+      }
+    }
+  ]
+}
