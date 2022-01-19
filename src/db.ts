@@ -99,7 +99,7 @@ async function sendNotification(post: rawRedditData) {
   client.createModmailDiscussion({
     srName: subredditToModmail,
     subject: `Submission by ${post.author} was deleted!`,
-    body: `Title: ${post.title}\n\nContent: ${post.selftext}`,
+    body: `Link: https://reddit.com${post.permalink}\n\n\nTitle: ${post.title}\n\nContent: ${post.selftext}`,
   });
 }
 
